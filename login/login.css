@@ -1,0 +1,259 @@
+:root {
+    /*Color*/
+    --color-gold: #B0A381;
+    --color-bright-gold: #D0BC8A;
+    --color-black: #191919;
+    --color-grey: #707070;
+    --color-light-grey: #fafafa;
+    --color-white: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+/*Typography*/
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 16px;
+}
+/*Header*/
+header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding: 45px 60px;
+    z-index: 1;
+    border-bottom: 1px solid var(--color-gold);
+    background-color: var(--color-white);
+}
+
+header.navbar-bk {
+    background-color: var(--color-black);
+    padding: 30px 60px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li a {
+    color: var(--color-black);
+}
+
+header .left-menu {
+    float: left;  
+}
+
+header ul:last-of-type {
+    float: right;
+}
+
+header li {
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+header li a:hover {
+    color: var(--color-gold);
+}
+
+header li a {
+    color: var(--color-white);
+}
+
+header .logo {
+    position: absolute;
+    top: 32%;
+    left: 45%;
+}
+
+/*Navbar*/
+nav {
+    background-color: rgba(255,255,255,0.9);
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 2;
+    padding: 150px 0 0 50px;
+    font-size: 20px;
+}
+
+nav h2 {
+    margin-bottom: 40px;
+}
+
+nav li a {
+    line-height: 35px;
+    color: var(--color-black);
+}
+
+nav svg {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top:0;
+    right:0;
+    margin: 30px 40px;
+}
+
+.perfume-navbar {
+    display: none;
+}
+
+.perfume-navbar.open {
+    display: block;
+}
+
+.skin-navbar {
+    display: none;
+}
+
+.skin-navbar.open {
+    display: block;
+}
+
+/*Filter opens when nav*/
+.filter {
+    position: fixed;
+    top:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 70%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.filter.active {
+    display: block;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+/*Login*/
+.login-page {
+    width: 400px;
+    height: 446px;
+    display: flex;
+    flex-direction: column;
+    margin: 210px auto 0;
+}
+
+.login-page h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.login-page input {
+    height: 34px;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    margin: 10px 0 20px;
+}
+
+.login-btn, .join-btn {
+    height: 40px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login-btn {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.join-btn {
+    border: 1px solid var(--color-grey);
+}
+
+.login-page span {
+    text-align: center;
+}
+
+.naver-icon, .facebook-icon {
+    width: 36px;
+    height: 36px;
+    margin: 0 8px;
+}
+
+.close-login {
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+
+.close-login svg {
+    width: 36px;
+    height: 36px;
+}
+
+/*Footer*/
+footer {
+    background: var(--color-light-grey);
+    margin-top: 100px;
+    padding: 55px 0;  
+}
+
+.information {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.information h5 {
+    margin-bottom: 8px;
+}
+
+.information p, .information li {
+    font-size: 11px;
+    line-height: 25px;
+}
+
+.column-bar {
+    background-color: var(--color-white);
+    height: 200px;
+    width: 2px;
+}
