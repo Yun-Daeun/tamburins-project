@@ -14,7 +14,7 @@ document.addEventListener('scroll', () => {
 /* */
     var i = 0; // Start point
     var images = [];
-    var time = 4000;
+    var time = 3000;
 
     //Image List
     images[0] = 'imgs/store_1.jpg';
