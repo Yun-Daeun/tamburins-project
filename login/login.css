@@ -234,17 +234,6 @@ body.active {
     margin: 0 8px;
 }
 
-.close-login {
-    position: absolute;
-    top:20px;
-    right:20px;
-}
-
-.close-login svg {
-    width: 36px;
-    height: 36px;
-}
-
 /*Footer*/
 footer {
     background: var(--color-light-grey);
@@ -358,7 +347,7 @@ footer {
         color: var(--color-grey)
     }
     
-    nav {
+    .mobile-navbar {
         padding: 80px 0 0 50px;
         background-color: white;
     }
