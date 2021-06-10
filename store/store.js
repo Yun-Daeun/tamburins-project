@@ -11,7 +11,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
-/* */
+/*Store img slider*/
     var i = 0; // Start point
     var images = [];
     var time = 3000;
@@ -35,3 +35,4 @@ document.addEventListener('scroll', () => {
     }
 
     window.onload = changeImg;
+

@@ -99,6 +99,14 @@ header .logo {
     left: 45%;
 }
 
+header button {
+    display: none;
+}
+
+.logo {
+    width: 164px;
+}
+
 /*Navbar*/
 nav {
     background-color: rgba(255,255,255,0.9);
@@ -145,6 +153,14 @@ nav svg {
     display: block;
 }
 
+.mobile-navbar {
+    display: none;
+}
+
+.mobile-navbar.open {
+    display: block;
+}
+
 /*Filter opens when nav*/
 
 .filter {
@@ -169,7 +185,7 @@ body.active {
 /*Store*/
 
 .store-img {
-    width: 300vw;
+    width: 100vw;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -297,4 +313,133 @@ footer {
     background-color: var(--color-white);
     height: 200px;
     width: 2px;
+}
+
+.information > div:nth-of-type(1){
+    width: 100%;
+}
+
+.information > div:nth-of-type(3){
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1200px){
+    /*Typography*/
+    header ul{
+        display: none;
+    }
+
+    header button {
+        display: block;
+        color: white;
+    }
+
+    .campaign-video .overlay {
+        display: none;
+    }
+
+    header .logo {
+        top: 30%;
+        left: 40%;
+        width: 140px;
+    }
+
+    .store-overlay {
+        color: var(--color-black);
+        position: relative;
+        top:0;
+        padding: 20px 0;
+    }
+    
+    .store-overlay h2 {
+        margin-bottom: 50px;
+    }
+
+    .store-overlay .line {
+        background-color: var(--color-black);
+        margin: 10px 0 20px;
+        height: 15px;
+    }
+
+    .mobile-navbar {
+        width: 100%;
+    }
+
+    .mobile-navbar li:last-child {
+        color: var(--color-grey)
+    }
+    
+    nav {
+        padding: 80px 0 0 50px;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 760px){
+    h1 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    h2{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+
+    .information {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .column-bar {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+    }
+
+    header, header.navbar-bk {
+        padding: 5% 8%;
+    }
+
+    header .logo {
+        top: 30%;
+        left: 40%;
+        width: 110px;
+    }
+
+    .mobile-navbar {
+        width: 100%;
+    }
+
+    .mobile-navbar li:last-child {
+        color: var(--color-grey)
+    }
+    
+    nav {
+        padding: 80px 0 0 50px;
+        background-color: white;
+    }
+
+    .store-overlay {
+        color: var(--color-black);
+        position: relative;
+        top:0;
+        padding: 20px 0;
+    }
+    
+    .store-overlay h2 {
+        margin-bottom: 50px;
+    }
+
+    .store-overlay .line {
+        background-color: var(--color-black);
+        margin: 10px 0 20px;
+        height: 15px;
+    }
 }
