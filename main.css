@@ -99,6 +99,14 @@ header .logo {
     left: 45%;
 }
 
+header button {
+    display: none;
+}
+
+.logo {
+    width: 164px;
+}
+
 /*Navbar*/
 nav {
     background-color: rgba(255,255,255,0.9);
@@ -267,7 +275,7 @@ svg {
 
 .bar {
     background-color: rgba(0, 0, 0, 0.2);
-    width: 500px; 
+    width: 50%; 
     margin: auto;
 }
 
@@ -303,4 +311,74 @@ footer {
     background-color: var(--color-white);
     height: 200px;
     width: 2px;
+}
+
+.information > div:nth-of-type(1){
+    width: 100%;
+}
+
+.information > div:nth-of-type(3){
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1000px){
+    /*Typography*/
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+    header ul{
+        display: none;
+    }
+
+    header button {
+        display: block;
+        color: white;
+    }
+
+    /* header {
+        background-color: var(--color-black);
+        padding: 30px 60px;
+    } */
+    .campaign-video .overlay {
+        display: none;
+    }
+
+    .best-seller h1 {
+        text-align: center;
+    }
+
+    .information {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .column-bar {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+    }
+
+    header, header.navbar-bk {
+        padding: 5% 8%;
+    }
+
+    header .logo {
+        top: 30%;
+        left: 40%;
+        width: 100px;
+    }
+
 }
