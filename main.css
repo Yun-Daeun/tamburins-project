@@ -357,7 +357,7 @@ footer {
     }
 
     .information > div:first-child {
-        padding-left: 5%;
+        padding: 0 5%;
     }
 }
 
