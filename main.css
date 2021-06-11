@@ -355,6 +355,10 @@ footer {
     .mobile-navbar {
         width: 100%;
     }
+
+    .information > div:first-child {
+        padding-left: 5%;
+    }
 }
 
 @media screen and (max-width: 760px){
